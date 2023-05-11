@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+:root {
+  --body-bg-color: #2d3237;
+  --purple-color: #9d4edd;
+  --dark-color: #212529;
+  --chat-color: #393c3e;
+  --gray-color: #5e6061;
+  --danger-color: #df4759;
+  --success-color: #4bb543;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1.5;
+  font-family: 'Lato', sans-serif;
+  color: #fff;
+  background-color: var(--body-bg-color);
+}
+
+img {
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Navbar */
+#header {
+  background-color: var(--dark-color);
+}
+
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#navbar button {
+  font-size: 1rem;
+}
+
+#logo {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+#logo img {
+  width: 50px;
+}
+
+/* Utilities */
+.container {
+  max-width: 1280px;
+  margin: auto;
+  overflow: hidden;
+  padding: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  border: none;
+  padding: 0.6rem 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.btn-primary {
+  background-color: var(--purple-color);
+  color: #fff;
+}
+
+.form-input {
+  background-color: var(--gray-color);
+  padding: 0.8rem 1rem;
+  width: 100%;
+  border-radius: 4px;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.form-input:focus {
+  outline: 3px solid var(--purple-color);
+}

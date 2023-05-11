@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MeetRoom - Lobby</title>
+    <script src="/client/constants.js"></script>
+    <script>
+      if (sessionStorage.getItem('user') !== null) {
+        location.replace(`${SERVER_URL}/chat`);
+      }
+    </script>
+    <link rel="stylesheet" href="/client/styles/global.css" />
+    <link rel="stylesheet" href="/client/styles/index.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="header">
+      <div class="container">
+        <nav id="navbar">
+          <div id="logo">
+            <img src="/client/assets/png/logo.png" alt="logo" />
+            <h1>MeetPeople</h1>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- Main -->
+    <main id="main">
+      <form id="chat-join-form">
+        <h3 class="title">Join To Our Chat</h3>
+        <div class="input-group">
+          <input
+            type="text"
+            placeholder="Enter username..."
+            class="form-input"
+          />
+          <button type="submit" class="btn btn-primary">Join To Chat</button>
+        </div>
+      </form>
+    </main>
+    <!-- Scripts -->
+    <script src="/client/utils.js"></script>
+    <script src="/client/src/ui.js"></script>
+    <script src="/client/src/home/home.js"></script>
+    <script src="/client/src/home/main.js"></script>
+  </body>
+</html>
